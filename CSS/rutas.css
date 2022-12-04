@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,600;1,700&display=swap');
+
+
+body{
+    background: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.img1{
+    width: 1300px;
+    height: 250px;
+    border:1px solid black;
+    background-image:url(../img/segundoindex.jpg);
+    background-repeat: no-repeat;
+}
+
+.nav-boton{
+    background: rgb(74, 49, 234);
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    display: none;
+}
+
+.nav-link{
+    display: inline-block;
+    background-color:rgb(74, 49, 234);
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: none;
+    
+}
+.nav-link:hover{
+    background: rgb(186, 43, 226);
+}
+nav{
+    background: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 600px){
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-link{
+        margin: 10px;
+    }
+    .nav-boton{
+        display: inline-block;
+    } 
+    .desaparece{
+        display: none;
+    }
+}
+
+
+.mapa1{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 50px #888;
+}
+
+.mapa2{
+    text-align: right;
+    border: 1px solid #bcbcbc;
+    box-shadow: 5px 5px 50px #888;
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,600;1,700&display=swap"  rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50304080b3.js" crossorigin="anonymous"></script>
+    <title>Blog Viajero</title>
+    <link rel="shortcut icon" href="./img/iconoviajero.png" type="imagen/icono">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+  <header>
+    <img class="img1" src="#">
+     <nav>
+      <button class="nav-boton" onclick="accion()">Menú</button>
+      <a href="./pag/inicioindex.html" class="nav-link desaparece">Inicio</a>
+      <a href="./pag/lugaresindex.html" class="nav-link desaparece">Sitios de Argentina</a>
+      <a href="./pag/exoticossindex.html" class="nav-link desaparece">Sitios Extranjeros</a>
+      <a href="./pag/rutasindex.html" class="nav-link desaparece">Ubicaciones Geograficas</a>
+      <a href="./pag/form.html" class="nav-link desaparece">Contacto</a>
+     </nav>
+  </header>
+  <section>
+    <main class="padre-main">
+      <article class="articulo-hijo">
+        <h3>¿CUÁL ES LA IMPORTANCIA DE VIAJAR?</h3>
+        <img class="img2" src="./img/importancia-de-viajar-768x377.jpg"  alt="Importacia de Viajar">
+        <p>Viajar, es mucho más que hacer turismo, es un ejercicio de aprendizaje constante que nos aleja de nuestra rutina, nos pone a prueba, es escapar y vivir una vida diferente a lo acostumbrado por unas semanas y permite conocernos mejor a nosotros mismos.</p>
+        <h3>¿POR QUÉ VIAJAR?</h3>
+        <ul>
+          <li>Las razones para viajar son incalculables y diferentes porque dependen de cada persona.</li>
+          <li>Viajamos para romper con la rutina, para tomar distancia de lo cotidiano.</li>
+          <li>Para conocer y experimentar de primera mano nuevas culturas, formas de vida.</li>
+          <li>También para conocer gente, para conocerse a uno mismo en las distintas situaciones que se nos presente, para conocer los propios límites.</li>
+          <li>Se viaja por la adrenalina, por amor al viaje, por placer a lo desconocido y por miedo a lo desconocido.</li>
+          <li>Porque viajar es un ejercicio de tolerancia, paciencia, audacia y perspicacia.</li>
+          <li>Porque viajar es aprender y equivocarse -y viceversa.</li>
+          <li>Es compartir experiencias con extraños con la misma intimidad con la que se cuentan secretos a una mejor amiga.</li>
+        </ul>
+      </article>
+    </main>
+  </section>
+       <aside class="mensaje-1">
+        <h3 class="titulo-1">Aerolíneas Argentinas presentó nuevas rutas aéreas y aumentó sus frecuencias en el país y la región</h3>
+        <img class="imagen1" src="./img/aside1"   alt="Aerolíneas">
+        <h5>2 de Diciembre de 2022</h5>
+       <a href="https://www.infobae.com/economia/2022/12/02/aerolineas-argentinas-presento-nuevas-rutas-aereas-y-aumento-sus-frecuencias-en-el-pais-y-la-region/">Leer Nota</a>
+       </aside>
+       <aside class="mensaje-2">
+        <h3 class="titulo-2">¿Dónde pasear en Lima Provincia?</h3>
+        <img class="imagen2" src="./img/aside2" alt="Lima">
+        <h5> 25 de Noviembre de 2022</h5>
+        <a href="https://www.infobae.com/america/peru/2021/10/08/10-lugares-para-viajar-cerca-de-lima-barato-y-seguro/">Leer Nota</a>
+       </aside>
+
+    <footer class="pie-pagina">
+     <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="img/iconoviajero.png"  alt="LogoBlogViajero">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <p>“Un viaje se vive 3 veces: cuando lo soñamos, cuando lo vivimos y cuando lo recordamos”.</p>
+      </div>
+      <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa-brands fa-whatsapp"></a>
+        </div>
+      </div>    
+     </div>
+     <div class="grupo-2">
+      <small>&copy; 2022 <b>Blog Viajero</b> - Todos los Derechos Reservados
+      </small>
+     </div>
+   </footer>
+   
+    <!-- JavaScript -->
+
+    <script>
+        function accion(){
+          console.log("Está funcionando mi boton")
+          let ancla = document.getElementsByClassName('nav-link')
+          for (let i = 0; i < ancla.length; i++){
+              ancla[i].classList.toggle('desaparece')
+          }
+        }
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
