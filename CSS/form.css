@@ -13,7 +13,8 @@ a{
 }
 
 .padre-contenedor{
-    width: 600px;
+    width: 800px;
+    height: 100%;
     background: #24303C;
     padding: 30px;
     margin: auto;
@@ -87,7 +88,3 @@ h3{
     width: 100%;
 }
 
-.fa-solid{
-    font-size: 50px;
-    margin: 15px;
-}
