@@ -9,16 +9,16 @@ body{
 a{
     font-size: 20px;
     color: rgb(12, 5, 5);
-    width: 50px;
+    width: 150px;
 }
 
 .padre-contenedor{
-    width: 800px;
+    width: 600px;
     height: 100%;
     background: #24303C;
     padding: 30px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
