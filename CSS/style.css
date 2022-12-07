@@ -5,14 +5,15 @@
      box-sizing: border-box;
  }
 body{
-    width: auto;
+    width: 100%;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-color: rgba(93, 187, 162, 0.732);
     color: rgb(12, 11, 11);
 }
 
 .img1{
-    width: 1300px;
+    width: 100%;
     height: 250px;
     border:1px solid black;
     background-image:url(../img/segundoindex.jpg);
@@ -20,6 +21,7 @@ body{
 }
 
 .nav-boton{
+    width: 100%;
     background: rgb(74, 49, 234);
     color: #fff;
     padding: 10px 0;
@@ -39,8 +41,10 @@ body{
 }
 .nav-link:hover{
     background: rgb(186, 43, 226);
+    te
 }
 nav{
+    width: 100%;
     background: black;
     padding: 10px;
     display: flex;
@@ -66,9 +70,9 @@ nav{
 /* index.html*/
 
 .padre-articulo{
-    width: 1200px;
-    margin:auto;
-    margin-top: 40px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 .articulo.hijo{
@@ -91,13 +95,32 @@ nav{
 }
 
 h2{
-  font-family: 'Diplomata SC', serif;
-  font-size: 30px;
-  text-shadow: 4px 4px 4px #aaa;
+  margin-top: 5px;
+  font-family: 'Diplomata SC';
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 4px 4px 4px rgba(10, 1, 1, 0.5);
 }
 
 p{
+    padding: 5px;
     font-family: 'La Belle Aurore';
+    font-size: 20px;
+    color: #0a141d;
+}
+
+img{
+    box-shadow: 4px 4px 4px rgba(10, 1, 1, 0.5) ;
+}
+
+h3{
+margin: 10px;
+  font-family: 'Diplomata SC';
+  font-size: 50px;
+  text-shadow: 4px 4px 4px rgba(10, 1, 1, 0.5);
+}
+li{
+    font-style: italic;
 }
 
 /*aside*/
@@ -107,8 +130,7 @@ p{
     grid-row: 2;
     box-sizing: border-box;
     margin-left: 850px;
-    border: 4px #3b3a3a;
-    margin-top: -750px;
+    margin-top: -770px;
     margin-left: 900px;
     margin-right: 50px;
     float:right;
@@ -120,7 +142,9 @@ p{
 }
 
 h5 a{
-    font-size: 10px;
+    font-family:'Diplomata SC' ;
+    font-size: 30px;
+    font-weight: 10px;
 }
 
 .imagen1{
@@ -133,7 +157,6 @@ h5 a{
     grid-row: 2;
     box-sizing: border-box;
     margin-left: 850px;
-    border: 4px #3b3a3a;
     margin-top: -400px;
     margin-left: 900px;
     margin-right: 50px;
@@ -192,6 +215,7 @@ h5 a{
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
     margin-bottom: 10px;
+    
 }
 
 .pie-pagina .grupo-1 .red-social a{
@@ -208,7 +232,10 @@ h5 a{
 }
 
 .pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
+    color: rgb(5, 245, 245);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
+    filter: none;
 }
 
 .pie-pagina .grupo-2{
@@ -244,4 +271,60 @@ h5 a{
 h3 p {
     width: 50%;
     text-align: left;
+}
+
+/* cards pag inicio*/
+
+.contenedor-card{
+    max-width: 1200px;
+    margin: auto;
+    background: #efefef;
+    margin-top: 100px;
+    perspective:1000px ;
+}
+
+.card-padre{
+    margin: 20px;
+    
+}
+
+.card-padre:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card{
+    width: 350px;
+    height: 400px;
+    background: rgba(93, 187, 162, 0.732);
+    position: relative;
+    transform-style: preserve-3d ;
+    transition: all 600ms;
+}
+
+.card-frontal{
+    background-size: cover;
+    background-position: center;
+
+}
+
+.card-frontal .card-atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.card-atras{
+    transform:rotateY(180deg);
+    background: rgba(93, 187, 162, 0.732);
+}
+
+.cuerpo-frontal{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
 }
