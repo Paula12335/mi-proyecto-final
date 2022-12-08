@@ -41,7 +41,7 @@ body{
 }
 .nav-link:hover{
     background: rgb(186, 43, 226);
-    te
+    
 }
 nav{
     width: 100%;
@@ -266,65 +266,104 @@ h5 a{
     text-align: left;
     color: #fff;
 }
-
+.titulo{
+    font-size: 48px;
+}
 
 h3 p {
-    width: 50%;
-    text-align: left;
+    width: 100%;
+    font-family: 'La Belle Aurore', sans-serif;
+    text-align: center;
+    text-decoration:line-through;
 }
 
 /* cards pag inicio*/
 
-.contenedor-card{
+.titulo-aside{
+    font-size: 48px;
+    font-family: 'Diplomata SC', sans-serif;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(10, 1, 1, 0.5);;
+}
+
+.contenedor-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     max-width: 1200px;
-    margin: auto;
-    background: #efefef;
-    margin-top: 100px;
-    perspective:1000px ;
+    height: 650px;
+
 }
 
-.card-padre{
-    margin: 20px;
-    
-}
-
-.card-padre:hover .card{
-    transform: rotateY(180deg);
+.contenedor-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 650px;
 }
 
 .card{
-    width: 350px;
-    height: 400px;
-    background: rgba(93, 187, 162, 0.732);
-    position: relative;
-    transform-style: preserve-3d ;
-    transition: all 600ms;
-}
-
-.card-frontal{
-    background-size: cover;
-    background-position: center;
-
-}
-
-.card-frontal .card-atras{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
 }
 
-.card-atras{
-    transform:rotateY(180deg);
-    background: rgba(93, 187, 162, 0.732);
+.card:hover{
+    box-shadow: 5px 5px 20px  rgba(0,0,0,0.4);
+    transform: translateY(-3%);
 }
-
-.cuerpo-frontal{
+.card img{
     width: 100%;
-    height: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
     text-align: center;
-    padding: 40px;
+}
+
+.card .contenido p{
+    line-height: 1 ;
+    color: #6a6a6a;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px ;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid  #2fb4cc ;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff
+}
+
+@media screen and (max-width: 900px){
+    .card{
+        width: 50% ;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .card .contenido p a h3{
+        width: 33% ;
+        font-size: 12px;
+    }
 }
