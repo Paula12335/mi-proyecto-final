@@ -59,6 +59,9 @@ nav{
   }
 }
 
+/*lugares.html*/
+
+
   .carouselExampleCaptions {
     width: 100%;
     overflow: scroll;
@@ -113,8 +116,13 @@ nav{
     margin: 0;
     padding: 0 1rem;
     vertical-align: middle;
-
   }
+
+  .d-block{
+    width: 600px;
+    height: 600px;
+  }
+
 
   /*Footer*/
 
