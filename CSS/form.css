@@ -53,8 +53,10 @@ body{
 }
 .nav-link:hover{
    background: rgb(186, 43, 226);
-   
+   transform: scale(1.5) translateY(-10px);
+   transition: all 0.4s;
 }
+
 nav{
    width: 100%;
    background: black;

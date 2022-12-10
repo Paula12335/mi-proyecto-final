@@ -30,6 +30,7 @@ body{
     display: none;
 }
 
+
 .nav-link{
     display: inline-block;
     background-color:rgb(74, 49, 234);
@@ -41,6 +42,8 @@ body{
 }
 .nav-link:hover{
     background: rgb(186, 43, 226);
+    transform: scale(1.5) translateY(-10px);
+    transition: all 0.4s;
     
 }
 nav{
@@ -68,6 +71,7 @@ nav{
 }
 
 /* index.html*/
+
 
 .padre-articulo{
     width: 100%;
@@ -124,6 +128,7 @@ li{
 }
 
 /*aside*/
+
 .mensaje-1{
     width: 300px; 
     grid-column: 2;
@@ -151,10 +156,14 @@ h5 a{
     width: 70%;
 }
 
+.imagen1:hover{
+    transform: scale(0.9) translateX(-10px
+    );
+    transition: all 0.4s;
+}
+
 .mensaje-2{
     width: 300px; 
-    grid-column: 2;
-    grid-row: 2;
     box-sizing: border-box;
     margin-left: 850px;
     margin-top: -400px;
@@ -176,6 +185,14 @@ h5 a{
 .imagen2{
     width: 70%;
 }
+
+.imagen2:hover{
+    transform: scale(0.9) translateX(-10px
+    );
+    transition: all 0.4s;
+}
+
+
 
 /*Footer*/
 
