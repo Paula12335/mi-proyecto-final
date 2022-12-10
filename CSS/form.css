@@ -1,6 +1,6 @@
 
 body{
-    background-image: url('../img/fonfo-form.jpg');
+    background-image: linear-gradient(rgba(124, 231, 231, 0.5),rgba(89, 180, 223, 0.6)), url('../img/fonfo-form.jpg');
     
 }
 
@@ -186,7 +186,7 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0;
+    padding: 45px 0px;
 }
 
 .pie-pagina .grupo-1 .box figure{

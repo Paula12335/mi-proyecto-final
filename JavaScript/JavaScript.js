@@ -1,4 +1,4 @@
-//inicio
+//todas las paginas
  
  function accion(){
    console.log("Está funcionando mi boton")
@@ -9,9 +9,17 @@
  }
 
 
-//lugares - carousel
-const myCarouselElement = document.querySelector('#myCarousel')
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 2000,
-  wrap: false
-})
+let Edad;
+Edad = prompt('Ingrese su Edad')
+if(Edad >= 18){
+  alert('Puedes entrar, eres mayor de edad.')
+}else{
+  alert('Eres menor, no puedes ingresar')
+}
+
+
+
+
+
+
+

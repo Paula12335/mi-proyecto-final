@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(93, 187, 162, 0.732);
+    background-image: linear-gradient(rgba(69, 207, 170, 0.4),rgba(40, 169, 135, 0.6)), url(../img/fondo.index.jpg);
     color: rgb(12, 11, 11);
 }
 
