@@ -9,7 +9,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #0a141d;
+    background-color:  rgba(93, 187, 162, 0.732);
     margin: 0;
 
 }
@@ -68,72 +68,118 @@ nav{
 
 /*lugares.html*/
 
+.todo_el_contenido{
+  width: 190px;
+  margin: auto;
+  perspective: 1000px;
+  position: relative;
+  margin-top: 100px;
+}
 
-  .carouselExampleCaptions {
-    width: 100%;
-    overflow: scroll;
-    padding: 10px;
-    position: relative;
+.contenido_carrousel{
+  width: 100%;
+  position: absolute;
+  animation: rotar 10s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.contenido_carrousel:hover{
+  animation-play-state: paused ;
+  cursor: pointer;
+}
+
+.contenido_carrousel figure{
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px  black;
+  transition: all 300ms;
+}
+
+.contenido_carrousel figure:hover{
+  box-shadow: 0px 0px 0px 0px  black;
+  transition: all 300ms;
+}
+
+
+
+.contenido_carrousel figure:nth-last-child(0){transform: rotateY(0deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(1){transform: rotateY(36deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(2){transform: rotateY(72deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(3){transform: rotateY(108deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(4){transform: rotateY(144deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(5){transform: rotateY(180deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(6){transform: rotateY(216deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(7){transform: rotateY(252deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(8){transform: rotateY(288deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(9){transform: rotateY(324deg) translateZ(300px);}
+
+.contenido_carrousel figure:nth-last-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+
+
+.contenido_carrousel img{
+  width: 100%;
+  transition: all 300ms;
+}
+
+.contenido_carrousel img:hover{
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@keyframes rotar{
+  from{
+    transform: rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
   }
-  .carousel-inner{
-    white-space: nowrap;
-    margin: 30px 0px;
-    padding-bottom: 10px; 
-  }
-  .carousel__item {
-    background-color: rgb(163, 31, 75);
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
+}
+
+@media (max-width:600px) {
+  .contenido_carrousel figure{
+    width: 300px;
+    height: 150px;
     overflow: hidden;
-    margin-right: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms all;
-    transform-origin: center left;
-  }
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px  black;
+    transition: all 300ms;
+  }  
+   .contenido_carrousel img{
+    width: 50%;
+    transition: all 300ms;
+}
+}
+ 
+.col-8{
+  margin-left: 250px;
+  margin-top: 350px;
+  text-align: center;
+}
+h5{
+  font-size: 38px;
+  text-shadow:  4px 4px 4px rgba(10, 1, 1, 0.5);
+}
 
-  .carousel__item:hover ~ .carousel__item {
-    transform: translate3d(100px, 0, 0);
-  }
-
-  .carousel__container:hover .carousel__item {
-    opacity: 0.3;
-  }
-
-  .carousel__container:hover .carousel__item:hover {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-
-  .carousel-caption{
-    background-color: #0c6cc07b;
-    width: 100%;
-    margin-left: -195px;
-    align-items: right; 
-    display: flex;
-    justify-content: center;
-  }
-
-  
-  h5 p li{
-    color: black;
-    position:absolute;
-    font-size: 1.6rem;
-    margin: 0;
-    padding: 0 1rem;
-    vertical-align: middle;
-  }
-
-  .d-block{
-    width: 600px;
-    height: 600px;
-  }
+p{
+  font-size: 28px;
+}
 
 
   /*Footer*/
 
 .pie-pagina{
+  margin-top: 100px;
   width: 100%; 
   background-color: #0a141d;
 }
