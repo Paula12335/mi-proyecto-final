@@ -8,7 +8,7 @@
    }
  }
 
-
+/*
 let Edad;
 Edad = prompt('Ingrese su Edad')
 if(Edad >= 18){
@@ -16,7 +16,7 @@ if(Edad >= 18){
 }else{
   alert('Eres menor, no puedes ingresar')
 }
-
+*/
 
 
 
