@@ -8,15 +8,16 @@ body{
     width: 100%;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(69, 207, 170, 0.4),rgba(40, 169, 135, 0.6)), url(../img/fondo.index.jpg);
+   background-image: linear-gradient(rgba(69, 207, 170, 0.4),rgba(40, 169, 135, 0.6)), url(../img/fondo.index.jpg);
     color: rgb(12, 11, 11);
 }
 
+ 
 .img1{
     width: 100%;
     height: 250px;
     border:1px solid black;
-    background-image:url(../img/segundoindex.jpg);
+   background-image:url(../img/segundoindex.jpg);
     background-repeat: no-repeat;
 }
 
