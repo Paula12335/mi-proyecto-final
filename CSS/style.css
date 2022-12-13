@@ -58,11 +58,13 @@ body{
     }
 }
 
+
+
 .img1{
     width: 100%;
     height: 250px;
     border:1px solid black;
-   background-image:url(../img/segundoindex.jpg);
+    background-image:url(../img/segundoindex.jpg);
     background-repeat: no-repeat;
 }
 
@@ -74,6 +76,7 @@ body{
     border: 2px solid #fff;
     border-radius: 8px;
     display: none;
+    
 }
 
 
@@ -84,8 +87,8 @@ body{
     color: #fff;
     padding: 10px 30px;
     text-align: none;
-    
 }
+
 .nav-link:hover{
     background: rgb(186, 43, 226);
     transform: scale(1.5) translateY(-10px);
@@ -93,6 +96,7 @@ body{
     
 }
 nav{
+    margin-top: 0;
     width: 100%;
     background: black;
     padding: 10px;
