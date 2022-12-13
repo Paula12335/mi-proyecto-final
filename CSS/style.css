@@ -12,7 +12,52 @@ body{
     color: rgb(12, 11, 11);
 }
 
- 
+.ventana-modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    animation:  modal 3s 5s ;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenido-popup{
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background: #efefef;
+    background-image: linear-gradient(rgba(69, 207, 170, 0.4),rgba(40, 169, 135, 0.6)), url(../img/fondo.index.jpg);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: -30px 0px 20px - 30px black;
+}
+
+.pop-up-texto{
+    font-size: 40px;
+    text-align: center;
+    color: #df1616;
+    text-shadow: 0px 10px 10px black;
+}
+
+.parrafo-pop{
+    font-size: 15px;
+    font-weight: 300;
+    color: #df1616;
+    text-align: center;
+}
+
+
+@keyframes modal {
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 .img1{
     width: 100%;
     height: 250px;
