@@ -20,7 +20,7 @@ body{
     top: 0;
     left: 0;
     display: flex;
-    animation:  modal 3s 5s ;
+    animation:  modal 35s;
     visibility: hidden;
     opacity: 0;
 }
@@ -30,23 +30,23 @@ body{
     width: 50%;
     height: 50%;
     background: #efefef;
-    background-image: linear-gradient(rgba(69, 207, 170, 0.4),rgba(40, 169, 135, 0.6)), url(../img/fondo.index.jpg);
+    background-image: linear-gradient(rgba(129, 149, 143, 0.4),rgba(238, 243, 241, 0.6)), url(../img/fondo.index.jpg);
     border-radius: 10px;
     border: 2px solid black;
-    box-shadow: -30px 0px 20px - 30px black;
+    box-shadow: -10px 0px 10px -10px black;
 }
 
 .pop-up-texto{
     font-size: 40px;
     text-align: center;
-    color: #df1616;
-    text-shadow: 0px 10px 10px black;
+    color: #6f0909;
+    text-shadow: 0px 4px 4px black;
 }
 
 .parrafo-pop{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
-    color: #df1616;
+    color: #410f0f;
     text-align: center;
 }
 
