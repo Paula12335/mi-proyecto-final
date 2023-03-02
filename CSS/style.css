@@ -17,10 +17,8 @@ body{
     height: 100vh;
     background: rgba(0,0,0,0.4);
     position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
-    animation:  modal 35s;
+    animation:  modal 20s;
     visibility: hidden;
     opacity: 0;
 }
@@ -32,7 +30,7 @@ body{
     background: #efefef;
     background-image: linear-gradient(rgba(129, 149, 143, 0.4),rgba(238, 243, 241, 0.6)), url(../img/fondo.index.jpg);
     border-radius: 10px;
-    border: 2px solid black;
+    border: 5px solid black;
     box-shadow: -10px 0px 10px -10px black;
 }
 
